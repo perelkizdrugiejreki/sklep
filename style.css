@@ -1,0 +1,90 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tło i ogólny styl strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Kontener główny */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Nagłówek */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Siatka produktów */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Karta produktu */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+/* Efekt powiększenia przy najechaniu */
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Obrazek produktu */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Nazwa produktu */
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Cena produktu */
+.product-price {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Przycisk dodania do koszyka */
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Efekt zmiany koloru przy najechaniu */
+.add-to-cart:hover {
+    background-color: #555;
+}
