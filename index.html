@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEREŁKI Z DRUGIEJ RĘKI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Nagłówek strony -->
+    <header>
+        <div class="logo">
+            <h1>PEREŁKI Z DRUGIEJ RĘKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">STRONA GŁÓWNA</a></li>
+                <li class="dropdown">
+                    <a href="#">SKLEP</a>
+                    <!-- Rozwijane menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#kategoria1">HOODIES</a></li>
+                        <li><a href="#kategoria2">TEES</a></li>
+                        <li><a href="#kategoria3">JEANS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">O NAS</a></li>
+                <li><a href="#">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <span>🛒 Koszyk</span>
+            <div class="cart-preview">
+                <ul id="cart-items"></ul>
+                <p id="cart-total">Całkowity koszt: 0,00 zł</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sekcje kategorii -->
+    <section id="kategoria1">
+        <h2>HOODIES</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="1">
+                <a href="product1.html">
+                    <img src="images/product1.jpg" alt="Produkt 1">
+                </a>
+            </div>
+            <div class="product-card" data-product-id="2">
+                <a href="product2.html">
+                    <img src="images/product2.jpg" alt="Produkt 2">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kategoria2">
+        <h2>TEES</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="3">
+                <a href="product3.html">
+                    <img src="images/product3.jpg" alt="Produkt 3">
+                </a>
+            </div>
+            <div class="product-card" data-product-id="4">
+                <a href="product4.html">
+                    <img src="images/product4.jpg" alt="Produkt 4">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kategoria3">
+        <h2>JEANS</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="5">
+                <a href="product5.html">
+                    <img src="images/product5.jpg" alt="Produkt 5">
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
